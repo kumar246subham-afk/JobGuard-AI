@@ -1,0 +1,4 @@
+model_name,accuracy,precision_fraud,recall_fraud,f1_fraud,roc_auc
+Logistic Regression (Production),0.962,0.5645,0.9364,0.7043,0.9919
+Calibrated Linear SVM,0.9888,0.9586,0.8035,0.8742,0.9946
+Multinomial Naive Bayes,0.9712,0.973,0.4162,0.583,0.9505

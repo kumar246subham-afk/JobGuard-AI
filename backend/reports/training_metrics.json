@@ -1,0 +1,74 @@
+{
+  "model_name": "TF-IDF + Structured Features Logistic Regression (Balanced)",
+  "trained_at": "2026-11-18T12:24:36.799779+00:00",
+  "dataset_version": "EMSCAD Fake Job Postings",
+  "total_samples": 17880,
+  "train_samples": 14304,
+  "test_samples": 3576,
+  "accuracy": 0.962,
+  "precision_fraud": 0.5645,
+  "recall_fraud": 0.9364,
+  "f1_fraud": 0.7043,
+  "roc_auc": 0.9919,
+  "pr_auc": 0.9042,
+  "confusion_matrix": {
+    "true_negative": 3278,
+    "false_positive": 125,
+    "false_negative": 11,
+    "true_positive": 162
+  },
+  "classification_report": {
+    "Legitimate (0)": {
+      "precision": 0.9966555183946488,
+      "recall": 0.9632677049662063,
+      "f1-score": 0.9796772265391512,
+      "support": 3403.0
+    },
+    "Fraudulent (1)": {
+      "precision": 0.5644599303135889,
+      "recall": 0.9364161849710982,
+      "f1-score": 0.7043478260869566,
+      "support": 173.0
+    },
+    "accuracy": 0.9619686800894854,
+    "macro avg": {
+      "precision": 0.7805577243541189,
+      "recall": 0.9498419449686523,
+      "f1-score": 0.8420125263130539,
+      "support": 3576.0
+    },
+    "weighted avg": {
+      "precision": 0.975746727360526,
+      "recall": 0.9619686800894854,
+      "f1-score": 0.9663573198617939,
+      "support": 3576.0
+    }
+  },
+  "model_comparisons": [
+    {
+      "model_name": "Logistic Regression (Production)",
+      "accuracy": 0.962,
+      "precision_fraud": 0.5645,
+      "recall_fraud": 0.9364,
+      "f1_fraud": 0.7043,
+      "roc_auc": 0.9919
+    },
+    {
+      "model_name": "Calibrated Linear SVM",
+      "accuracy": 0.9888,
+      "precision_fraud": 0.9586,
+      "recall_fraud": 0.8035,
+      "f1_fraud": 0.8742,
+      "roc_auc": 0.9946
+    },
+    {
+      "model_name": "Multinomial Naive Bayes",
+      "accuracy": 0.9712,
+      "precision_fraud": 0.973,
+      "recall_fraud": 0.4162,
+      "f1_fraud": 0.583,
+      "roc_auc": 0.9505
+    }
+  ],
+  "training_time_seconds": 182.58
+}

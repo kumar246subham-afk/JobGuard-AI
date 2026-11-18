@@ -1,0 +1,11 @@
+{
+  "project_name": "JobGuard AI",
+  "model_filename": "jobguard_pipeline_v1.joblib",
+  "feature_representation": "FeatureUnion(TF-IDF N-grams 10,000 + StructuredFeatureExtractor 7)",
+  "classifier_algorithm": "LogisticRegression(class_weight='balanced', solver='liblinear')",
+  "dataset_rows": 17880,
+  "accuracy": 0.962,
+  "fraud_recall": 0.9364,
+  "fraud_precision": 0.5645,
+  "fraud_f1": 0.7043
+}
